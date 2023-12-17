@@ -212,4 +212,5 @@ All commands are run from the root of the project, from a terminal:
   <img src="https://contrib.rocks/image?repo=danielcgilibert/blog-template" />
 </a>
 #   b l o g e  
+ #   b l o g e  
  
