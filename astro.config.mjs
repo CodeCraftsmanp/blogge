@@ -1,10 +1,11 @@
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
-import tailwind from '@astrojs/tailwind'
-import { remarkReadingTime } from './src/utils/readTime.ts'
+// astro.config.mjs or astro.config.js
 
-// https://astro.build/config
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import tailwind from '@astrojs/tailwind';
+import { remarkReadingTime } from './src/utils/readTime.ts';
+
 export default defineConfig({
 	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
 	markdown: {
@@ -12,19 +13,22 @@ export default defineConfig({
 		drafts: true,
 		shikiConfig: {
 			theme: 'material-theme-palenight',
-			wrap: true
-		}
+			wrap: true,
+		},
 	},
 	integrations: [
 		mdx({
 			syntaxHighlight: 'shiki',
 			shikiConfig: {
 				theme: 'material-theme-palenight',
-				wrap: true
+				wrap: true,
 			},
-			drafts: true
+			drafts: true,
 		}),
 		sitemap(),
-		tailwind()
-	]
-})
+		tailwind(),
+	],
+	pages: {
+		'/privacy': 'src/components/pages/privacy.astro', // Add this line to specify the path to your privacy page
+	},
+});
