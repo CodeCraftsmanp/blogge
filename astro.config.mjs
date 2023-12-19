@@ -28,7 +28,5 @@ export default defineConfig({
 		sitemap(),
 		tailwind(),
 	],
-	pages: {
-		'/privacy': 'src/components/pages/privacy.astro', // Add this line to specify the path to your privacy page
-	},
+
 });

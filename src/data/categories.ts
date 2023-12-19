@@ -1,7 +1,7 @@
 // List of categories for blog posts
 export const CATEGORIES = [
 	'الطب و الصحة',
-	'الدكاء الاصطناعي',
+	'الذكاء الاصطناعي',
 	'علوم الفضاء',
 	'الانسان',
 	'الابحات',
