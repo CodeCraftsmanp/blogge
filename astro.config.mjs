@@ -5,9 +5,16 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
+import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
 	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	output: 'server',
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+	}),
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
 		drafts: true,
