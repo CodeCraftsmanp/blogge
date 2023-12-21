@@ -7,26 +7,26 @@ import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
 
 export default defineConfig({
-	site: 'https://blogge-brahims-projects-e4d16622.vercel.app/', // Write here your website url
-	markdown: {
-		remarkPlugins: [remarkReadingTime],
-		drafts: true,
-		shikiConfig: {
-			theme: 'material-theme-palenight',
-			wrap: true,
-		},
-	},
-	integrations: [
-		mdx({
-			syntaxHighlight: 'shiki',
-			shikiConfig: {
-				theme: 'material-theme-palenight',
-				wrap: true,
-			},
-			drafts: true,
-		}),
-		sitemap(),
-		tailwind(),
-	],
+  site: 'https://blogge-brahims-projects-e4d16622.vercel.app/', // Write here your website url
+  markdown: {
+    remarkPlugins: [remarkReadingTime],
+    drafts: true,
+    shikiConfig: {
+      theme: 'material-theme-palenight',
+      wrap: true,
+    },
+  },
+  integrations: [
+    mdx({
+      syntaxHighlight: 'shiki',
+      shikiConfig: {
+        theme: 'material-theme-palenight',
+        wrap: true,
+      },
+      drafts: true,
+    }),
+    sitemap(),
+    tailwind(),
+  ],
 
 });
