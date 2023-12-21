@@ -6,6 +6,7 @@ import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
+import InstagramIcon from '@/components/icons/Instagram'
 
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
@@ -19,16 +20,21 @@ const SOCIALNETWORKS = [
 		name: 'Twitter',
 		url: 'https://twitter.com/brahim_Chatri',
 		icon: TwitterIcon
+	},
+	{
+		name: 'Instagram',
+		url: 'https://www.instagram.com/brahim_chatri',
+		icon: InstagramIcon
 	}
 ]
 ---
 
-<header class='relative flex items-center h-12 font-semibold'>
+<header class='relative flex items-center h-12 font-semibold' dir='ltr'>
 	<a class='text-lg mr-auto' href='/'>Arabic-Science</a>
 
 	<div
 		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
+		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 right-0 pr-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
 	>
 		<nav
 			class='flex h-full flex-col justify-between gap-12 text-left md:flex-row md:w-full md:gap-5'
