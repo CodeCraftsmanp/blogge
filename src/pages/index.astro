@@ -12,7 +12,6 @@ const posts = await getPosts(MAX_POSTS)
 <BaseLayout title='Home'>
 	<TitlePage title='الرئيسية' />
 	<ListCategories />
-
 	<div>
 		<h2 class='text-lg font-medium tracking-wide text-end'>اخر المنشورات</h2>
 		<ListPosts FirstBig={true} posts={posts} />
