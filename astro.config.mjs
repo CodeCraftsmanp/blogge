@@ -5,6 +5,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
+import partytown from "@astrojs/partytown";
 
 export default defineConfig({
   site: 'https://blogge-brahims-projects-e4d16622.vercel.app/', // Write here your website url
@@ -27,6 +28,12 @@ export default defineConfig({
     }),
     sitemap(),
     tailwind(),
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
   ],
 
 });

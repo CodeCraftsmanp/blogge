@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@astrojs/partytown':
+    specifier: ^2.0.2
+    version: 2.0.2
   '@astrojs/rss':
     specifier: 3.0.0
     version: 3.0.0
@@ -199,6 +202,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@astrojs/partytown@2.0.2:
+    resolution: {integrity: sha512-7AnY0W8mXiog5S1gEGefCNcvJSjxn/mfhr+ou1QH7QwqxtnIsS7mQ+ci5wDRDDbM5ipnEdQGHIxz2DAP2DXnXQ==}
+    dependencies:
+      '@builder.io/partytown': 0.8.1
+      mrmime: 1.0.1
+    dev: false
 
   /@astrojs/prism@3.0.0:
     resolution: {integrity: sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ==}
@@ -793,6 +803,12 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+
+  /@builder.io/partytown@0.8.1:
+    resolution: {integrity: sha512-p4xhEtQCPe8YFJ8e7KT9RptnT+f4lvtbmXymbp1t0bLp+USkNMTxrRMNc3Dlr2w2fpxyX7uA0CyAeU3ju84O4A==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
+    dev: false
 
   /@codemirror/language@6.0.0:
     resolution: {integrity: sha512-rtjk5ifyMzOna1c7PBu7J1VCt0PvA5wy3o8eMVnxMKb7z8KA7JFecvD04dSn14vj/bBaAbqRsGed5OjtofEnLA==}
@@ -7445,7 +7461,6 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-
   /@vitejs/plugin-react@3.1.0(vite@4.5.0):
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -12327,6 +12342,11 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /mrmime@1.0.1:
+    resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
+    engines: {node: '>=10'}
+    dev: false
+
   /ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
@@ -14270,10 +14290,6 @@ packages:
 
   /server-destroy@1.0.1:
     resolution: {integrity: sha512-rb+9B5YBIEzYcD6x2VKidaa+cqYBJQKnU4oe4E3ANwRRN56yk/ua1YCJT1n21NTS8w6CcOclAKNP3PhdCXKYtQ==}
-
-  /server-only@0.0.1:
-    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
-    dev: false
 
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
