@@ -8,6 +8,5 @@ export const CATEGORIES = [
 	'العلوم',
 	'الاكتشافات',
 	'الحب',
-	'الطب ',
 	'علم النفس'
 ] as const
