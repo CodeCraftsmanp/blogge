@@ -47,7 +47,7 @@
 		"@tinacms/cli": "^1.5.30",
 		"@typescript-eslint/parser": "^6.21.0",
 		"clsx": "2.0.0",
-		"eslint": "^8.53.0",
+		"eslint": "^8.57.0",
 		"eslint-plugin-astro": "^0.31.4",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"husky": "^9.0.11",
